@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        *{
+            border: 1px solid red;
+            /* padding: 0px;
+            margin: 0px;  */
+        }
+
+        body{
+            display: grid;
+            grid-template-areas: 
+            "header header"
+            "main aside"
+            "categories aside"
+            "footer footer";
+            /* grid-template-rows: auto 1fr auto;
+            
+            min-height: 100vh; */
+            grid-template-columns: 1fr 350px;
+        }
+
+        .site-header{
+            grid-area: header;
+            
+        }
+
+        .my-main {
+            grid-area: main;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* grid-template-areas: 
+            "box box"
+            "box box"; */
+            /* grid-template-columns: 1fr 1fr; */
+            /* gap: 15px;
+            padding: 15px; */
+        }
+
+        .my-aside {
+            grid-area: aside;
+            
+        }
+
+        .site-footer {
+            grid-area: footer;
+        }
+        .my-categories{
+            grid-area: categories;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .box{
+            margin: auto;
+            margin: 10px;
+            padding: 10px;
+        }
+        .imagefit {
+            width: 100vw;
+            height: 150px;
+        }
+        @media (max-width:1000px){
+
+        }
+
+    </style>
+</head>
+<body>
+    <!--header-->
+    <header class="site-header">
+        <!---->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img class="d-block w-100 imagefit" src="images/evangelion-congratulations-evangelion.gif" alt="First slide">
+            </div>
+        </div>
+        <!---->
+        <div class="box">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+
+                </ul>
+
+            </div>
+            </nav>
+        </div>
+        <!---->
+    </header>
+
+    <!--main-->
+    <main class="my-main">
+        <!---->
+        <div class="box"><div class="card" style="width: 20rem;">
+        <img src="https://picsum.photos/seed/picsum/300/200" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Early intelligence suggests Iran’s uranium largely intact, European officials say</h5>
+            <p class="card-text">Preliminary intelligence assessments provided to European governments indicate that Iran's highly enriched uranium stockpile remains largely...</p>
+            <a href="#" class="btn btn-primary">Go to article</a>
+        </div>
+        </div></div>
+        <div class="box"><div class="card" style="width: 20rem;">
+        <img src="https://picsum.photos/seed/picsum/300/200" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Thune says Senate won’t overrule parliamentarian</h5>
+                <p class="card-text">Senate Majority Leader John Thune said Thursday the Senate would not move to overrule its parliamentarian after she advised that including...</p>
+                <a href="#" class="btn btn-primary">Go to article</a>
+            </div>
+        </div></div>
+        <div class="box"><div class="card" style="width: 20rem;">
+            <img src="https://picsum.photos/seed/picsum/300/200" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">US gained nothing from strikes, Iran's supreme leader says</h5>
+                <p class="card-text">The ayatollah speaks for the first time since the conflict ended, as the US insists Iran's nuclear sites are destroyed.</p>
+                <a href="#" class="btn btn-primary">Go to article</a>
+            </div>
+        </div></div>
+        <div class="box"><div class="card" style="width: 20rem;">
+            <img src="https://picsum.photos/seed/picsum/300/200" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Supreme Court lets South Carolina block Medicaid funds from Planned Parenthood</h5>
+                <p class="card-text">The Supreme Court rejected Planned Parenthood's challenge to South Carolina's attempt to bar the organization from participating in its...</p>
+                <a href="#" class="btn btn-primary">Go to article</a>
+            </div>
+        </div></div>
+        <div class="box"><div class="card" style="width: 20rem;">
+            <img src="https://picsum.photos/seed/picsum/300/200" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Supreme Court lets South Carolina block Medicaid funds from Planned Parenthood</h5>
+                <p class="card-text">The Supreme Court rejected Planned Parenthood's challenge to South Carolina's attempt to bar the organization from participating in its...</p>
+                <a href="#" class="btn btn-primary">Go to article</a>
+            </div>
+        </div></div>
+        <div class="box"><div class="card" style="width: 20rem;">
+            <img src="https://picsum.photos/seed/picsum/300/200" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">'Severely damaged': CIA contradicts initial assessment from Defense Intelligence Agency</h5>
+                <p class="card-text">Affordability, cost of living the top issue in Virginia, says gubernatorial candidate. 09:59. 'M3GAN 2.0' actor on AI in art and her support...</p>
+                <a href="#" class="btn btn-primary">Go to article</a>
+            </div>
+        </div></div>
+        <div class="box"><div class="card" style="width: 20rem;">
+            <img src="https://picsum.photos/seed/picsum/300/200" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Jaw-dropping footage released showing how 30,000-pound bunker-buster bombs work like the ones used in historic Iran strike</h5>
+                <p class="card-text">The Pentagon released jaw-dropping footage showcasing how the 30000-pound heavy-duty bunker-buster bombs that were used against Iran...</p>
+                <a href="#" class="btn btn-primary">Go to article</a>
+            </div>
+        </div></div>
+        <div class="box"><div class="card" style="width: 20rem;">
+            <img src="https://picsum.photos/seed/picsum/300/200" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">How 'Daddy' talk and Trump and Rutte's bromance stole the NATO spotlight</h5>
+                <p class="card-text">It was the "bromance" between President Donald Trump and NATO Secretary General Mark Rutte that ultimately threatened to steal NATO's...</p>
+                <a href="#" class="btn btn-primary">Go to article</a>
+            </div>
+        </div></div>
+        <!---->
+    </main>
+
+    <!--aside-->
+    <aside class="my-aside box">
+        <!---->
+        <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <!---->
+    </aside>
+
+    <!--footer-->
+    <footer class="site-footer">
+        <!---->
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                </ul>
+                <p class="text-center text-muted">© 2021 Company, Inc</p>
+            </footer>
+        </div>
+        <!---->
+    </footer>
+    
+
+    <!--Categories-->
+    <section class="my-categories">
+        <!---->
+        <div class="box"><div class="card" style="width: 25rem;">
+        <img src="images/bmo2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h3 class="card-title">Entertainment</h3>
+            <a href="#" class="btn btn-primary">Go to Entertainment</a>
+        </div>
+        </div></div>
+        <div class="box"><div class="card" style="width: 25rem;">
+        <img src="images/bmo2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="card-title">Politics</h3>
+                <a href="#" class="btn btn-primary">Go to Politics</a>
+            </div>
+        </div></div>
+        <div class="box"><div class="card" style="width: 25rem;">
+            <img src="images/bmo2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="card-title">Sports</h3>
+                <a href="#" class="btn btn-primary">Go to Sports</a>
+            </div>
+        </div></div>
+        <!---->
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
